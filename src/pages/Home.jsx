@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Box, Typography, Button, Grid, Card, CardContent, Container } from '@mui/material';
 import { AccountBalanceWallet, TrendingUp, Analytics as AnalyticsIcon } from '@mui/icons-material';
 import { useWallet } from '../context/WalletContext';
+import WalletConnectButton from '../components/WalletConnectButton';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -51,7 +52,7 @@ const Home = () => {
         >
           Welcome to Asseti
         </Typography>
-
+        
         <Typography
           variant="h5"
           sx={{
@@ -62,6 +63,8 @@ const Home = () => {
         >
           Your comprehensive portfolio management solution on Base Network
         </Typography>
+
+        <WalletConnectButton />
 
         {!isConnected && (
           <Typography
