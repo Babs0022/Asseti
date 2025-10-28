@@ -71,6 +71,7 @@ const Home = () => {
             variant="body1"
             sx={{
               mb: 4,
+              mt: 3,
               color: 'warning.main',
               p: 2,
               bgcolor: 'rgba(255, 152, 0, 0.1)',
@@ -82,7 +83,7 @@ const Home = () => {
         )}
 
         {isConnected && (
-          <Box sx={{ display: 'flex', gap: 2, mb: 6 }}>
+          <Box sx={{ display: 'flex', gap: 2, mb: 6, mt: 3 }}>
             <Button
               variant="contained"
               size="large"
